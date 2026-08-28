@@ -400,8 +400,8 @@ function Playbook() {
   return (
     <div className="min-h-screen bg-[#0f181d]">
       <header className="sticky top-0 z-50 border-b border-[#27323a] bg-[#121b20]/95 backdrop-blur">
-        <nav className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
-          <a href="#top" className="flex shrink-0 items-center p-[11px]" aria-label="Back to top">
+        <div className="flex items-center justify-between py-3 pl-2 pr-2 sm:pl-3 sm:pr-3">
+          <a href="#top" className="flex shrink-0 items-center" aria-label="Back to top">
             <img
               src={LOGO}
               alt="Redbelly DAO logo"
@@ -412,11 +412,13 @@ function Playbook() {
           </a>
           <Link
             to="/proof"
-            className="ml-auto inline-flex items-center rounded-[6px] border border-[#EF5350] bg-[#EF5350] px-4 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#d8413e]"
+            className="inline-flex items-center rounded-[6px] border border-[#EF5350] bg-[#EF5350] px-4 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#d8413e]"
           >
             Proof
           </Link>
-          <ul className="flex w-full flex-wrap gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
+        </div>
+        <nav className="pl-2 pb-3 sm:pl-3">
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
             {NAV.map((item) => (
               <li key={item.id}>
                 <a

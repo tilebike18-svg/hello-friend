@@ -400,19 +400,19 @@ function Playbook() {
   return (
     <div className="min-h-screen bg-[#0f181d]">
       <header className="sticky top-0 z-50 border-b border-[#27323a] bg-[#121b20]/95 backdrop-blur">
-        <nav className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
-          <a href="#top" className="flex shrink-0 items-center p-[11px]" aria-label="Back to top">
+        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+          <a href="#top" className="flex shrink-0 items-center" aria-label="Back to top">
             <img
               src={LOGO}
               alt="Redbelly DAO logo"
-              width={78}
-              height={40}
-              className="block h-10 w-auto shrink-0"
+              width={117}
+              height={60}
+              className="block h-14 w-auto shrink-0 sm:h-16"
             />
           </a>
           <Link
             to="/proof"
-            className="ml-auto inline-flex items-center rounded-[6px] border border-[#EF5350] bg-[#EF5350] px-4 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#d8413e]"
+            className="ml-auto inline-flex items-center rounded-[6px] border border-[#EF5350] bg-[#EF5350] px-5 py-2 text-[14px] font-semibold text-white transition-colors hover:bg-[#d8413e]"
           >
             Proof
           </Link>

@@ -810,28 +810,16 @@ function Playbook() {
             </div>
 
             <div className="space-y-6">
-              <figure className="space-y-2">
-                <figcaption className="text-[15px] font-bold underline text-[#cfd8df]">
-                  Lucid Labs Bridge, pre-connect state
-                </figcaption>
-                <img
-                  src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence/connect%20wallet.jpg"
-                  alt="Lucid Labs Bridge pre-connect wallet screen"
-                  className="w-full rounded-[8px] border border-[#3a4650]"
-                  loading="lazy"
-                />
-              </figure>
-              <figure className="space-y-2">
-                <figcaption className="text-[15px] font-bold underline text-[#cfd8df]">
-                  Solana selected as source - no route found, confirms the two-hop limitation above
-                </figcaption>
-                <img
-                  src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence/solana%20to%20redbelly.png"
-                  alt="Solana selected as source chain with no route found to Redbelly"
-                  className="w-full rounded-[8px] border border-[#3a4650]"
-                  loading="lazy"
-                />
-              </figure>
+              <Figure
+                src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence/connect%20wallet.jpg"
+                alt="Lucid Labs Bridge pre-connect wallet screen"
+                caption="Lucid Labs Bridge, pre-connect state"
+              />
+              <Figure
+                src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence/solana%20to%20redbelly.png"
+                alt="Solana selected as source chain with no route found to Redbelly"
+                caption="Solana selected as source - no route found, confirms the two-hop limitation above"
+              />
             </div>
             <p className="text-[16px]">
               Full evidence: all chains, both tools -{" "}

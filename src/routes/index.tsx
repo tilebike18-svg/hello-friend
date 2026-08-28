@@ -400,8 +400,8 @@ function Playbook() {
   return (
     <div className="min-h-screen bg-[#0f181d]">
       <header className="sticky top-0 z-50 border-b border-[#27323a] bg-[#121b20]/95 backdrop-blur">
-        <nav className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
-          <a href="#top" className="flex shrink-0 items-center p-[11px]" aria-label="Back to top">
+        <div className="flex items-center justify-between py-3 pl-1 pr-1 sm:pl-2 sm:pr-2">
+          <a href="#top" className="flex shrink-0 items-center" aria-label="Back to top">
             <img
               src={LOGO}
               alt="Redbelly DAO logo"
@@ -412,11 +412,13 @@ function Playbook() {
           </a>
           <Link
             to="/proof"
-            className="ml-auto inline-flex items-center rounded-[6px] border border-[#EF5350] bg-[#EF5350] px-4 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#d8413e]"
+            className="inline-flex items-center rounded-[6px] border border-[#EF5350] bg-[#EF5350] px-4 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#d8413e]"
           >
             Proof
           </Link>
-          <ul className="flex w-full flex-wrap gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
+        </div>
+        <nav className="pl-1 pb-3 sm:pl-2">
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
             {NAV.map((item) => (
               <li key={item.id}>
                 <a
@@ -431,7 +433,7 @@ function Playbook() {
         </nav>
       </header>
 
-      <main id="top" className="mx-auto max-w-5xl px-4 pb-24 sm:px-6">
+      <main id="top" className="mx-auto w-[88%] max-w-[1500px] pb-24">
         {/* HERO */}
         <section className="bg-[#121b20]/0 py-16 sm:py-20">
           <p className="font-sans text-[12px] font-bold tracking-[0.1em] text-[#93a4ae] uppercase">
@@ -443,7 +445,7 @@ function Playbook() {
           <p className="mt-3 text-[26px] leading-[1.2] font-semibold tracking-[-0.01em] text-[#b8c4cc] sm:text-[32px]">
             A Cross Chain Recovery Playbook
           </p>
-          <div className="mt-6 max-w-3xl">
+          <div className="mt-6">
             <P lead>
               This playbook covers the situations that strand RBNT in practice: tokens sent to the
               wrong network, bridge transfers that never arrive or never quote, and swaps that fail
@@ -979,7 +981,7 @@ function Playbook() {
       </main>
 
       <footer className="border-t border-[#27323a] bg-[#0a1216] py-14">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mx-auto w-[88%] max-w-[1500px]">
           <p className="text-[12px] font-bold tracking-[0.1em] text-[#93a4ae] uppercase">
             Research deliverable . Redbelly DAO
           </p>

@@ -774,33 +774,11 @@ function Playbook() {
               </figure>
               <figure className="space-y-2">
                 <figcaption className="text-[15px] font-bold underline text-[#cfd8df]">
-                  Wallet picker - EVM, Solana, and Tron wallets
-                </figcaption>
-                <img
-                  src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence/choose_wallet.png"
-                  alt="Wallet picker showing EVM, Solana, and Tron wallet options"
-                  className="w-full rounded-[8px] border border-[#3a4650]"
-                  loading="lazy"
-                />
-              </figure>
-              <figure className="space-y-2">
-                <figcaption className="text-[15px] font-bold underline text-[#cfd8df]">
                   Solana selected as source - no route found, confirms the two-hop limitation above
                 </figcaption>
                 <img
                   src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence/solana%20to%20redbelly.png"
                   alt="Solana selected as source chain with no route found to Redbelly"
-                  className="w-full rounded-[8px] border border-[#3a4650]"
-                  loading="lazy"
-                />
-              </figure>
-              <figure className="space-y-2">
-                <figcaption className="text-[15px] font-bold underline text-[#cfd8df]">
-                  Oku (oku.trade), the cross-check tool, wallet connect screen
-                </figcaption>
-                <img
-                  src="https://raw.githubusercontent.com/0xDarkSeidBull/daotask16/main/evidence2/wallet_connect.png"
-                  alt="Oku trade wallet connect screen used as cross-check tool"
                   className="w-full rounded-[8px] border border-[#3a4650]"
                   loading="lazy"
                 />

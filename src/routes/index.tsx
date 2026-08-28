@@ -400,7 +400,7 @@ function Playbook() {
   return (
     <div className="min-h-screen bg-[#0f181d]">
       <header className="sticky top-0 z-50 border-b border-[#27323a] bg-[#121b20]/95 backdrop-blur">
-        <div className="flex items-center justify-between py-3 pl-2 pr-2 sm:pl-3 sm:pr-3">
+        <div className="flex items-center justify-between py-3 pl-1 pr-1 sm:pl-2 sm:pr-2">
           <a href="#top" className="flex shrink-0 items-center" aria-label="Back to top">
             <img
               src={LOGO}
@@ -417,7 +417,7 @@ function Playbook() {
             Proof
           </Link>
         </div>
-        <nav className="pl-2 pb-3 sm:pl-3">
+        <nav className="pl-1 pb-3 sm:pl-2">
           <ul className="flex flex-wrap gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
             {NAV.map((item) => (
               <li key={item.id}>

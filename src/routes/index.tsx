@@ -218,6 +218,55 @@ function Step({ n, title, children }: { n: number; title: string; children: Reac
   );
 }
 
+function Figure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+  return (
+    <figure className="space-y-2">
+      <figcaption className="text-[15px] font-bold underline text-[#cfd8df]">
+        {caption}
+      </figcaption>
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        onClick={() => setOpen(true)}
+        className="block w-auto max-w-[280px] cursor-zoom-in rounded-[8px] border border-[#3a4650] transition-opacity hover:opacity-80"
+      />
+      {open ? (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setOpen(false)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <button
+            type="button"
+            aria-label="Close"
+            onClick={() => setOpen(false)}
+            className="absolute right-4 top-4 rounded-full bg-[#1b252a] p-2 text-[#e4ebf0] transition-colors hover:text-[#EF5350]"
+          >
+            <X className="h-6 w-6" aria-hidden="true" />
+          </button>
+          <img
+            src={src}
+            alt={alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-h-[88vh] max-w-[90vw] rounded-[8px] border border-[#3a4650]"
+          />
+        </div>
+      ) : null}
+    </figure>
+  );
+}
+
 /* ---------- data ---------- */
 
 const ETH = "0xb45ffb51984d626ee758b336c61cf20990c6bf13";

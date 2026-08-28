@@ -416,7 +416,7 @@ function Playbook() {
           >
             Proof
           </Link>
-          <ul className="flex w-full flex-wrap gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
+          <ul className="flex w-full flex-wrap justify-center gap-x-5 gap-y-1 text-[14px] text-[#b8c4cc]">
             {NAV.map((item) => (
               <li key={item.id}>
                 <a

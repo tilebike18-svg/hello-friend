@@ -433,7 +433,7 @@ function Playbook() {
         </nav>
       </header>
 
-      <main id="top" className="mx-auto max-w-5xl px-4 pb-24 sm:px-6">
+      <main id="top" className="mx-auto w-[88%] max-w-[1500px] pb-24">
         {/* HERO */}
         <section className="bg-[#121b20]/0 py-16 sm:py-20">
           <p className="font-sans text-[12px] font-bold tracking-[0.1em] text-[#93a4ae] uppercase">
@@ -445,7 +445,7 @@ function Playbook() {
           <p className="mt-3 text-[26px] leading-[1.2] font-semibold tracking-[-0.01em] text-[#b8c4cc] sm:text-[32px]">
             A Cross Chain Recovery Playbook
           </p>
-          <div className="mt-6 max-w-3xl">
+          <div className="mt-6">
             <P lead>
               This playbook covers the situations that strand RBNT in practice: tokens sent to the
               wrong network, bridge transfers that never arrive or never quote, and swaps that fail
@@ -981,7 +981,7 @@ function Playbook() {
       </main>
 
       <footer className="border-t border-[#27323a] bg-[#0a1216] py-14">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mx-auto w-[88%] max-w-[1500px]">
           <p className="text-[12px] font-bold tracking-[0.1em] text-[#93a4ae] uppercase">
             Research deliverable . Redbelly DAO
           </p>
